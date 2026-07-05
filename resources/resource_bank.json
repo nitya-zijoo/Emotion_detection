@@ -1,0 +1,58 @@
+{
+  "resources": {
+    "depressed_mood": {
+      "minimal": ["Take a short walk outside", "Write 3 things you're grateful for"],
+      "mild": ["Try guided meditation on YouTube", "iCall: 9152987821"],
+      "moderate": ["Vandrevala Foundation: 1860-2662-345", "Talk to a trusted person today"],
+      "severe": ["AASRA: 91-22-27546669", "Please see a mental health professional immediately"]
+    },
+    "anhedonia": {
+      "minimal": ["Try one small activity you used to enjoy", "Listen to your favorite music"],
+      "mild": ["Schedule one fun activity this week", "Join an online community around your interests"],
+      "moderate": ["iCall: 9152987821", "Consider talking to a counselor"],
+      "severe": ["Vandrevala Foundation: 1860-2662-345", "Please seek professional help"]
+    },
+    "sleep_disturbance": {
+      "minimal": ["Avoid screens 1 hour before bed", "Try a consistent sleep schedule"],
+      "mild": ["Try sleep meditation on YouTube", "Limit caffeine after 2pm"],
+      "moderate": ["Consult a doctor about sleep issues", "iCall: 9152987821"],
+      "severe": ["See a doctor immediately", "Vandrevala Foundation: 1860-2662-345"]
+    },
+    "fatigue": {
+      "minimal": ["Take short breaks every hour", "Drink more water"],
+      "mild": ["Light exercise like stretching or walking", "Check your diet and sleep"],
+      "moderate": ["Consult a doctor", "iCall: 9152987821"],
+      "severe": ["See a doctor immediately", "Vandrevala Foundation: 1860-2662-345"]
+    },
+    "worthlessness": {
+      "minimal": ["Write down 3 things you did well today", "Talk to a friend"],
+      "mild": ["Try a self-compassion exercise", "iCall: 9152987821"],
+      "moderate": ["Speak to a counselor", "Vandrevala Foundation: 1860-2662-345"],
+      "severe": ["AASRA: 91-22-27546669", "Please seek professional help immediately"]
+    },
+    "concentration": {
+      "minimal": ["Try the Pomodoro technique", "Reduce distractions around you"],
+      "mild": ["Try mindfulness exercises", "Break tasks into smaller steps"],
+      "moderate": ["iCall: 9152987821", "Consider speaking to a counselor"],
+      "severe": ["Vandrevala Foundation: 1860-2662-345", "Please seek professional help"]
+    },
+    "psychomotor": {
+      "minimal": ["Try deep breathing exercises", "Take a short walk"],
+      "mild": ["Try yoga or light stretching", "iCall: 9152987821"],
+      "moderate": ["Speak to a doctor", "Vandrevala Foundation: 1860-2662-345"],
+      "severe": ["See a doctor immediately", "AASRA: 91-22-27546669"]
+    },
+    "appetite": {
+      "minimal": ["Try eating small meals regularly", "Stay hydrated"],
+      "mild": ["Track your meals for a week", "iCall: 9152987821"],
+      "moderate": ["Consult a nutritionist or doctor", "Vandrevala Foundation: 1860-2662-345"],
+      "severe": ["See a doctor immediately", "AASRA: 91-22-27546669"]
+    },
+    "suicidal": {
+      "minimal": ["AASRA: 91-22-27546669", "iCall: 9152987821"],
+      "mild": ["AASRA: 91-22-27546669", "Vandrevala Foundation: 1860-2662-345"],
+      "moderate": ["AASRA: 91-22-27546669", "Please talk to someone you trust right now"],
+      "severe": ["AASRA: 91-22-27546669", "Please call emergency services or go to the nearest hospital"]
+    }
+  }
+}
