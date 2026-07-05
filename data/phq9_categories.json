@@ -1,0 +1,113 @@
+{
+  "categories": [
+    {
+      "id": "depressed_mood",
+      "label": "Depressed Mood",
+      "phq9_question": 1,
+      "example_phrases": [
+        "I feel so empty", "nothing makes me happy", "I feel hopeless",
+        "life feels pointless", "I've been feeling really down",
+        "I just feel sad all the time", "everything feels dark",
+        "I don't see the point anymore", "I feel numb",
+        "I've been crying a lot lately"
+      ]
+    },
+    {
+      "id": "anhedonia",
+      "label": "Loss of Interest or Pleasure",
+      "phq9_question": 2,
+      "example_phrases": [
+        "I don't enjoy anything anymore", "nothing excites me",
+        "I stopped doing things I used to love", "I don't care about hobbies",
+        "even my favorite things feel boring", "I have no motivation",
+        "I can't find joy in anything", "I don't want to do anything",
+        "things that used to make me happy don't anymore",
+        "I've lost interest in everything"
+      ]
+    },
+    {
+      "id": "sleep_disturbance",
+      "label": "Sleep Problems",
+      "phq9_question": 3,
+      "example_phrases": [
+        "I can't sleep", "I sleep too much", "I wake up in the middle of the night",
+        "I haven't been sleeping well", "I stay up all night",
+        "I sleep all day", "insomnia is killing me",
+        "I'm exhausted but can't sleep", "I keep waking up early",
+        "my sleep is a mess"
+      ]
+    },
+    {
+      "id": "fatigue",
+      "label": "Fatigue or Loss of Energy",
+      "phq9_question": 4,
+      "example_phrases": [
+        "I'm always tired", "I have no energy", "I feel drained",
+        "I can't get out of bed", "everything feels like an effort",
+        "I'm exhausted all the time", "I feel so heavy",
+        "even small tasks wear me out", "I have no strength",
+        "I feel physically and mentally drained"
+      ]
+    },
+    {
+      "id": "worthlessness",
+      "label": "Feelings of Worthlessness or Guilt",
+      "phq9_question": 5,
+      "example_phrases": [
+        "I'm a failure", "I feel worthless", "I hate myself",
+        "everything is my fault", "I'm a burden to everyone",
+        "I don't deserve anything good", "I feel so guilty",
+        "I'm useless", "I always mess everything up",
+        "no one would miss me"
+      ]
+    },
+    {
+      "id": "concentration",
+      "label": "Difficulty Concentrating",
+      "phq9_question": 6,
+      "example_phrases": [
+        "I can't focus", "my mind keeps wandering", "I forget everything",
+        "I can't make decisions", "I can't think straight",
+        "I zone out constantly", "I can't finish tasks",
+        "I've been very distracted", "my memory is terrible",
+        "I can't concentrate on anything"
+      ]
+    },
+    {
+      "id": "psychomotor",
+      "label": "Psychomotor Changes",
+      "phq9_question": 7,
+      "example_phrases": [
+        "I move so slowly", "I feel restless", "I can't sit still",
+        "I feel agitated all the time", "my body feels sluggish",
+        "I've been pacing a lot", "I feel physically slowed down",
+        "I can't stop fidgeting", "everything I do feels slow",
+        "I feel like I'm moving through mud"
+      ]
+    },
+    {
+      "id": "appetite",
+      "label": "Appetite or Weight Changes",
+      "phq9_question": 8,
+      "example_phrases": [
+        "I'm not eating", "I overeat when I'm sad", "I have no appetite",
+        "I eat too much", "food doesn't taste like anything",
+        "I've been skipping meals", "I eat to cope",
+        "I've lost a lot of weight", "I've been stress eating",
+        "I have no interest in food"
+      ]
+    },
+    {
+      "id": "suicidal",
+      "label": "Suicidal Ideation",
+      "phq9_question": 9,
+      "example_phrases": [
+        "I don't want to be here anymore", "I wish I was dead",
+        "I think about ending it", "no one would care if I was gone",
+        "I'd be better off dead", "I've thought about hurting myself",
+        "life isn't worth living", "I want to disappear",
+        "I've been thinking about suicide", "I don't want to exist"
+      ]
+    }
+  ]
+}
