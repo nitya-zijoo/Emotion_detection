@@ -8,10 +8,10 @@ Base = declarative_base()
 class Message(Base):
     __tablename__ = "messages"
     
-    id = Column(String, primary_key=True)
-    user_id = Column(String)
-    message = Column(String)
-    category = Column(String)
+    id = Column(String(255), primary_key=True)
+    user_id = Column(String(255))
+    message = Column(String(1000))
+    category = Column(String(100))
     timestamp = Column(DateTime, default=datetime.utcnow)
 
 Base.metadata.create_all(engine)

@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 from datetime import datetime, timedelta
 from database import Message
 
-engine = create_engine("mysql+pymysql://username:password@localhost/emotions_db")
+engine = create_engine("mysql+pymysql://root:nitya@localhost/emotions_db")
 Session = sessionmaker(bind=engine)
 
 def get_category_counts(user_id: str) -> dict:

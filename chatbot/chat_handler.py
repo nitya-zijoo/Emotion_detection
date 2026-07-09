@@ -7,7 +7,7 @@ load_dotenv()
 client = InferenceClient(token=os.getenv("HUGGINGFACE_TOKEN"))
 
 def get_reply(user_message: str, chat_history: list) -> str:
-    with open("system_prompt.txt", "r") as f:
+    with open(os.path.join(os.path.dirname(__file__), "system_prompt.txt"), "r") as f:
         system_prompt = f.read()
 
     messages = [{"role": "system", "content": system_prompt}]
