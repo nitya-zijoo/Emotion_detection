@@ -17,5 +17,8 @@ def map_labels(example):
 
 mapped_dataset = dataset["train"].map(map_labels)
 filtered = mapped_dataset.filter(lambda x: x["phq9_label"] is not None)
-print(f"Filtered rows: {len(filtered)}")
-print(filtered[0])
+import pandas as pd
+
+df = pd.DataFrame({"text": filtered["text"], "label": filtered["phq9_label"]})
+df.to_csv("data/train.csv", index=False)
+print(df["label"].value_counts())
