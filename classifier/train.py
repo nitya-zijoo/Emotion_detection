@@ -22,7 +22,7 @@ train_dataset = Dataset.from_pandas(train_df)
 test_dataset = Dataset.from_pandas(test_df)
 
 # Load tokenizer and model
-model_name = "mental/mental-bert-base-uncased"
+model_name = "bert-base-uncased"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSequenceClassification.from_pretrained(
     model_name,
@@ -50,11 +50,12 @@ args = TrainingArguments(
     num_train_epochs=3,
     per_device_train_batch_size=16,
     per_device_eval_batch_size=16,
-    evaluation_strategy="epoch",
+    eval_strategy="epoch",
     save_strategy="epoch",
     load_best_model_at_end=True,
     logging_dir="../classifier/logs"
 )
+
 
 # Trainer
 trainer = Trainer(
