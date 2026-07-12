@@ -3,7 +3,7 @@ sys.path.append('..')
 
 from chatbot.chat_handler import get_reply
 from chatbot.crisis_check import is_crisis
-from classifier.zero_shot_classifier import zero_shot
+from classifier.predict import classify_message
 from backend.database import save_message
 from backend.aggregator import get_category_counts
 from backend.intervention import get_resources
@@ -18,7 +18,7 @@ def main(user_id: str, text: str, chat_history: list) -> dict:
     reply = get_reply(text, chat_history)
 
     # Step 3 - Classify
-    category = zero_shot(text)
+    category = classify_message(text)
 
     # Step 4 - Store
     save_message(user_id, text, category)
