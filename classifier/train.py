@@ -17,6 +17,9 @@ df["label"] = df["label"].map(label2id)
 # Split
 train_df, test_df = train_test_split(df, test_size=0.2, random_state=42)
 
+train_df = train_df.sample(500, random_state=42)
+test_df = test_df.sample(100, random_state=42)
+
 # Convert to HF Dataset
 train_dataset = Dataset.from_pandas(train_df)
 test_dataset = Dataset.from_pandas(test_df)
