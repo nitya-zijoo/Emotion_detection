@@ -3,7 +3,11 @@ from sqlalchemy import create_engine, Column, String, DateTime
 from sqlalchemy.orm import declarative_base, sessionmaker
 from datetime import datetime
 Base = declarative_base()
-engine = create_engine(f"mysql+pymysql://{os.getenv('MYSQL_USER')}:{os.getenv('MYSQL_PASSWORD')}@{os.getenv('MYSQL_HOST')}:{os.getenv('MYSQL_PORT')}/{os.getenv('MYSQL_DATABASE')}")
+engine = create_engine(
+    f"mysql+pymysql://{os.getenv('MYSQL_USER')}:{os.getenv('MYSQL_PASSWORD')}@{os.getenv('MYSQL_HOST')}:{os.getenv('MYSQL_PORT')}/{os.getenv('MYSQL_DATABASE')}",
+    pool_recycle=280,
+    pool_pre_ping=True
+)
 
 class Message(Base):
     __tablename__ = "messages"
