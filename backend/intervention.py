@@ -1,6 +1,6 @@
 import os
 import json
-from risk_scorer import get_severity_band
+from backend.risk_scorer import get_severity_band
 def get_resources(category_counts: dict) -> list:
     with open(os.path.join(os.path.dirname(__file__), "..", "resources", "resource_bank.json"), "r") as f:
         resource_bank = json.load(f)

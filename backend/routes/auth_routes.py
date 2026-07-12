@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
-from firebase_auth import register_user, login_user, send_verification_email, get_user_info
+from backend.firebase_auth import register_user, login_user, send_verification_email, get_user_info
 from database import save_user
 
 router = APIRouter()
