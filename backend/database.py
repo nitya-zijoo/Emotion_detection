@@ -28,3 +28,46 @@ def save_message(user_id: str, message: str, category: str):
     session.add(record)
     session.commit()
     session.close()
+class User(Base):
+    __tablename__ = "users"
+    
+    uid = Column(String(255), primary_key=True)
+    email = Column(String(255), unique=True, nullable=False)
+    name = Column(String(255))
+    age_group = Column(String(50))
+    gender = Column(String(50))
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+def save_user(uid: str, email: str, name: str, age_group: str = None, gender: str = None):
+    session = Session()
+    try:
+        user = User(
+            uid=uid,
+            email=email,
+            name=name,
+            age_group=age_group,
+            gender=gender
+        )
+        session.add(user)
+        session.commit()
+    except Exception as e:
+        session.rollback()
+        raise e
+    finally:
+        session.close()
+
+def get_user_profile(uid: str) -> dict:
+    session = Session()
+    try:
+        user = session.query(User).filter(User.uid == uid).first()
+        if user:
+            return {
+                "uid": user.uid,
+                "email": user.email,
+                "name": user.name,
+                "age_group": user.age_group,
+                "gender": user.gender
+            }
+        return None
+    finally:
+        session.close()
